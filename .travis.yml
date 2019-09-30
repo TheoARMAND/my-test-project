@@ -2,12 +2,12 @@ language: node_js
 node_js:
   - 10
 
-scrip:
-  - ./node_modules/.bin/jshint src
+script:
+  - node_modules/.bin/jshint src
   - npm test
 
 before deploy:
-    - ./node_modules/.bin/jsdoc src
+    - ènode_modules/.bin/jsdoc src
 
 deploy:
   provider: pages
