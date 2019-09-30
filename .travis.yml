@@ -7,7 +7,6 @@ scrip:
   - npm test
 
 before deploy:
-
     - ./node_modules/.bin/jsdoc src
 
 deploy:
@@ -16,4 +15,4 @@ deploy:
   github-token:$GITHUB_TOKEN
   keep-history : true
   on:
-    branch : master 
+    branch : master
